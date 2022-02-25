@@ -1,0 +1,12 @@
+# the patches directory
+patches/
+
+# backup files and the default configuration header file
+config.def.h
+*.orig
+*.bak
+
+# compiled object files and the execulatable
+dwm
+dwmblocks/dwmblocks
+*.o
