@@ -1,16 +1,17 @@
 /* appearance */
-static const unsigned int borderpx      = 2;        /* border pixel of windows */
-static const unsigned int gappx         = 12;       /* gaps between windows */
+static const unsigned int borderpx      = 1;        /* border pixel of windows */
+static const unsigned int gappx         = 6;        /* gaps between windows */
 static const unsigned int snap          = 10;       /* snap pixel */
 static const int showbar                = 1;        /* 0 means no bar */
 static const int topbar                 = 1;        /* 0 means bottom bar */
-static const int horizpadbar            = 7;        /* horizontal padding for statusbar */
-static const int vertpadbar             = 14;       /* vertical padding for statusbar */
-static const char *fonts[]              = { "Liberation Sans:style=Medium:size=8:antialias=true" };
+static const int horizpadbar            = 10;        /* horizontal padding for statusbar */
+static const int vertpadbar             = 16;       /* vertical padding for statusbar */
+static const char *fonts[]              = { "Liberation Sans:style=Regular:size=8:antialias=true",
+                                            "Siji:style=Regular" };
 
-static const char col_statusbg[]        = "#f3f3f3";
-static const char col_statusfg[]        = "#6e6d6d";
-static const char col_tagbg[]           = "#c0c0c0";
+static const char col_statusbg[]        = "#232729";
+static const char col_statusfg[]        = "#c0bfbc";
+static const char col_tagbg[]           = "#33393b";
 static const char col_aborder[]         = "#bac3cb";
 static const char col_iborder[]         = "#33393b";
 static const unsigned int baralpha      = OPAQUE;
@@ -19,7 +20,7 @@ static const unsigned int borderalpha   = OPAQUE;
 static const char *colors[][3]      = {
     /*               fg            bg            border */
     [SchemeNorm] = { col_statusfg, col_statusbg, col_iborder },
-    [SchemeSel]  = { col_iborder,  col_tagbg,    col_aborder },
+    [SchemeSel]  = { col_statusfg, col_tagbg,    col_aborder },
 };
 static const unsigned int alphas[][3]      = {
     /*               fg      bg         border */
@@ -37,15 +38,16 @@ static const Rule rules[] = {
      */
 
     /* class            instance        title           tags mask  isfloating   monitor */
-    { "Librewolf",      "Navigator",    NULL,           2,         0,           -1 },
     { "St",             NULL,           NULL,           0,         0,           -1 },
-    { "Thunar",         NULL,           NULL,           1 << 2,    0,           -1 },
     { "alacritty",      NULL,           NULL,           0,         0,           -1 },
+    { "Firefox",        "Navigator",    NULL,           2,         0,           -1 },
+    { "Spacefm",        NULL,           NULL,           1 << 2,    0,           -1 },
     { "pinentry-qt",    NULL,           NULL,           0,         1,           -1 },
+    { "Nsxiv",          "wallpapers",   "nsxiv",        0,         1,           -1 },
 };
 
 /* layout(s) */
-static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
