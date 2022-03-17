@@ -1,19 +1,19 @@
 /* appearance */
 static const unsigned int borderpx      = 1;        /* border pixel of windows */
-static const unsigned int gappx         = 4;        /* gaps between windows */
+static const unsigned int gappx         = 0;        /* gaps between windows */
 static const unsigned int snap          = 10;       /* snap pixel */
 static const int showbar                = 1;        /* 0 means no bar */
 static const int topbar                 = 1;        /* 0 means bottom bar */
 static const int horizpadbar            = 10;       /* horizontal padding for statusbar */
 static const int vertpadbar             = 20;       /* vertical padding for statusbar */
-static const char *fonts[]              = { "Liberation Sans:style=Regular:size=8:antialias=true",
-                                            "Noto Color Emoji:style=Regular:size=9" };
+static const char *fonts[]              = { "Liberation Sans:style=Regular:size=9:antialias=true:autohint=true",
+                                            "Noto Color Emoji:style=Regular:size=9", };
 
-static const char col_statusbg[]        = "#232729";
-static const char col_statusfg[]        = "#c0bfbc";
-static const char col_tagbg[]           = "#33393b";
-static const char col_aborder[]         = "#bac3cb";
-static const char col_iborder[]         = "#33393b";
+static const char col_statusbg[]        = "#121313";
+static const char col_statusfg[]        = "#a9bbb8";
+static const char col_tagbg[]           = "#202324";
+static const char col_aborder[]         = "#b2b2b2";
+static const char col_iborder[]         = "#202324";
 static const unsigned int baralpha      = OPAQUE;
 static const unsigned int borderalpha   = OPAQUE;
 
