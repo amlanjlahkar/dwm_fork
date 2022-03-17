@@ -1,13 +1,13 @@
 /* appearance */
 static const unsigned int borderpx      = 1;        /* border pixel of windows */
-static const unsigned int gappx         = 6;        /* gaps between windows */
+static const unsigned int gappx         = 4;        /* gaps between windows */
 static const unsigned int snap          = 10;       /* snap pixel */
 static const int showbar                = 1;        /* 0 means no bar */
 static const int topbar                 = 1;        /* 0 means bottom bar */
-static const int horizpadbar            = 10;        /* horizontal padding for statusbar */
-static const int vertpadbar             = 16;       /* vertical padding for statusbar */
+static const int horizpadbar            = 10;       /* horizontal padding for statusbar */
+static const int vertpadbar             = 20;       /* vertical padding for statusbar */
 static const char *fonts[]              = { "Liberation Sans:style=Regular:size=8:antialias=true",
-                                            "Siji:style=Regular" };
+                                            "Noto Color Emoji:style=Regular:size=9" };
 
 static const char col_statusbg[]        = "#232729";
 static const char col_statusfg[]        = "#c0bfbc";
@@ -98,12 +98,12 @@ static Key keys[] = {
     { MODKEY|ShiftMask,           XK_f,             togglefullscr,      {0} },
     { MODKEY,                     XK_0,             view,               {.ui = ~0 } },
     { MODKEY|ShiftMask,           XK_0,             tag,                {.ui = ~0 } },
-    { MODKEY,                     XK_comma,         focusmon,           {.i = -1 } },
-    { MODKEY,                     XK_period,        focusmon,           {.i = +1 } },
+    /* { MODKEY,                     XK_comma,         focusmon,           {.i = -1 } },
+    { MODKEY,                     XK_period,        focusmon,           {.i = +1 } }, */
     { MODKEY|ShiftMask,           XK_comma,         tagmon,             {.i = -1 } },
     { MODKEY|ShiftMask,           XK_period,        tagmon,             {.i = +1 } },
-    { MODKEY,                     XK_n,             shiftview,          {.i = +1 } },
-    { MODKEY,                     XK_p,             shiftview,          {.i = -1 } },
+    { MODKEY,                     XK_period,        shiftview,          {.i = +1 } },
+    { MODKEY,                     XK_comma,         shiftview,          {.i = -1 } },
     { MODKEY,                     XK_minus,         scratchpad_show,    {0} },
     { MODKEY|ShiftMask,           XK_minus,         scratchpad_hide,    {0} },
     { MODKEY,                     XK_equal,         scratchpad_remove,  {0} },
