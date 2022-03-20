@@ -6,13 +6,14 @@ static const int showbar                = 1;        /* 0 means no bar */
 static const int topbar                 = 1;        /* 0 means bottom bar */
 static const int horizpadbar            = 10;       /* horizontal padding for statusbar */
 static const int vertpadbar             = 20;       /* vertical padding for statusbar */
-static const char *fonts[]              = { "Liberation Sans:style=Regular:size=9:antialias=true:autohint=true",
-                                            "Noto Color Emoji:style=Regular:size=9", };
+static const char *fonts[]              = { "Liberation Sans:style=Bold:size=8:antialias=true:autohint=true",
+                                            "Noto Color Emoji:style=Regular:size=9",
+                                            "Font Awesome 5 Free Solid:style=Solid:size=8" };
 
 static const char col_statusbg[]        = "#121313";
 static const char col_statusfg[]        = "#a9bbb8";
 static const char col_tagbg[]           = "#202324";
-static const char col_aborder[]         = "#b2b2b2";
+static const char col_aborder[]         = "#c4501b";
 static const char col_iborder[]         = "#202324";
 static const unsigned int baralpha      = OPAQUE;
 static const unsigned int borderalpha   = OPAQUE;
