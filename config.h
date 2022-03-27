@@ -13,9 +13,9 @@ static const char *fonts[]              = { "Liberation Sans:style=Bold:size=8:a
 static const char col_statusbg[]        = "#121313";
 static const char col_statusfg[]        = "#a9bbb8";
 static const char col_tagbg[]           = "#202324";
-static const char col_aborder[]         = "#c4501b";
+static const char col_aborder[]         = "#c0e5de";
 static const char col_iborder[]         = "#202324";
-static const unsigned int baralpha      = OPAQUE;
+static const unsigned int baralpha      = 0x0de;
 static const unsigned int borderalpha   = OPAQUE;
 
 static const char *colors[][3]      = {
@@ -44,7 +44,7 @@ static const Rule rules[] = {
     { "Firefox",        "Navigator",    NULL,           2,         0,           -1 },
     { "Spacefm",        NULL,           NULL,           1 << 2,    0,           -1 },
     { "pinentry-qt",    NULL,           NULL,           0,         1,           -1 },
-    { "Nsxiv",          "wallpapers",   "nsxiv",        0,         1,           -1 },
+    { "Nsxiv",          "wallpapers",   NULL,           0,         1,           -1 },
 };
 
 /* layout(s) */
@@ -99,7 +99,7 @@ static Key keys[] = {
     { MODKEY|ShiftMask,           XK_f,             togglefullscr,      {0} },
     { MODKEY,                     XK_0,             view,               {.ui = ~0 } },
     { MODKEY|ShiftMask,           XK_0,             tag,                {.ui = ~0 } },
-    /* { MODKEY,                     XK_comma,         focusmon,           {.i = -1 } },
+    /* { MODKEY,                  XK_comma,      focusmon,           {.i = -1 } },
     { MODKEY,                     XK_period,        focusmon,           {.i = +1 } }, */
     { MODKEY|ShiftMask,           XK_comma,         tagmon,             {.i = -1 } },
     { MODKEY|ShiftMask,           XK_period,        tagmon,             {.i = +1 } },
