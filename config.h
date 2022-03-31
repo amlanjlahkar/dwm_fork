@@ -1,12 +1,12 @@
 /* appearance */
-static const unsigned int borderpx      = 1;        /* border pixel of windows */
-static const unsigned int gappx         = 0;        /* gaps between windows */
+static const unsigned int borderpx      = 2;        /* border pixel of windows */
+static const unsigned int gappx         = 8;        /* gaps between windows */
 static const unsigned int snap          = 10;       /* snap pixel */
 static const int showbar                = 1;        /* 0 means no bar */
 static const int topbar                 = 1;        /* 0 means bottom bar */
 static const int horizpadbar            = 10;       /* horizontal padding for statusbar */
-static const int vertpadbar             = 20;       /* vertical padding for statusbar */
-static const char *fonts[]              = { "Liberation Sans:style=Bold:size=8:antialias=true:autohint=true",
+static const int vertpadbar             = 16;       /* vertical padding for statusbar */
+static const char *fonts[]              = { "Liberation Sans:style=Regular:size=8:antialias=true:autohint=true",
                                             "Noto Color Emoji:style=Regular:size=9",
                                             "Font Awesome 5 Free Solid:style=Solid:size=8" };
 
