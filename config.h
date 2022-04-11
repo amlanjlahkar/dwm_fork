@@ -1,6 +1,6 @@
 /* appearance */
-static const unsigned int borderpx      = 2;        /* border pixel of windows */
-static const unsigned int gappx         = 8;        /* gaps between windows */
+static const unsigned int borderpx      = 1;        /* border pixel of windows */
+static const unsigned int gappx         = 0;        /* gaps between windows */
 static const unsigned int snap          = 10;       /* snap pixel */
 static const int showbar                = 1;        /* 0 means no bar */
 static const int topbar                 = 1;        /* 0 means bottom bar */
@@ -13,9 +13,9 @@ static const char *fonts[]              = { "Liberation Sans:style=Regular:size=
 static const char col_statusbg[]        = "#121313";
 static const char col_statusfg[]        = "#a9bbb8";
 static const char col_tagbg[]           = "#202324";
-static const char col_aborder[]         = "#c0e5de";
-static const char col_iborder[]         = "#202324";
-static const unsigned int baralpha      = 0x0de;
+static const char col_aborder[]         = "#006d77";
+static const char col_iborder[]         = "#121313";
+static const unsigned int baralpha      = OPAQUE;
 static const unsigned int borderalpha   = OPAQUE;
 
 static const char *colors[][3]      = {
@@ -45,6 +45,7 @@ static const Rule rules[] = {
     { "Spacefm",        NULL,           NULL,           1 << 2,    0,           -1 },
     { "pinentry-qt",    NULL,           NULL,           0,         1,           -1 },
     { "Nsxiv",          "wallpapers",   NULL,           0,         1,           -1 },
+    { "St",             "_spad",        NULL,           0,         1,           -1 },
 };
 
 /* layout(s) */
