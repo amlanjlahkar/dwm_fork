@@ -15,7 +15,7 @@ static const char col_statusfg[]        = "#a9bbb8";
 static const char col_tagbg[]           = "#202324";
 static const char col_aborder[]         = "#006d77";
 static const char col_iborder[]         = "#121313";
-static const unsigned int baralpha      = OPAQUE;
+static const unsigned int baralpha      = 0xde;
 static const unsigned int borderalpha   = OPAQUE;
 
 static const char *colors[][3]      = {
@@ -30,7 +30,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6" };
 
 static const Rule rules[] = {
     /* xprop(1):
@@ -100,10 +100,10 @@ static Key keys[] = {
     { MODKEY|ShiftMask,           XK_f,             togglefullscr,      {0} },
     { MODKEY,                     XK_0,             view,               {.ui = ~0 } },
     { MODKEY|ShiftMask,           XK_0,             tag,                {.ui = ~0 } },
-    /* { MODKEY,                  XK_comma,      focusmon,           {.i = -1 } },
-    { MODKEY,                     XK_period,        focusmon,           {.i = +1 } }, */
+    /* { MODKEY,                  XK_comma,         focusmon,           {.i = -1 } },
+    { MODKEY,                     XK_period,        focusmon,           {.i = +1 } },
     { MODKEY|ShiftMask,           XK_comma,         tagmon,             {.i = -1 } },
-    { MODKEY|ShiftMask,           XK_period,        tagmon,             {.i = +1 } },
+    { MODKEY|ShiftMask,           XK_period,        tagmon,             {.i = +1 } }, */
     { MODKEY,                     XK_period,        shiftview,          {.i = +1 } },
     { MODKEY,                     XK_comma,         shiftview,          {.i = -1 } },
     { MODKEY,                     XK_minus,         scratchpad_show,    {0} },
@@ -114,6 +114,7 @@ static Key keys[] = {
     TAGKEYS(                      XK_3,             2)
     TAGKEYS(                      XK_4,             3)
     TAGKEYS(                      XK_5,             4)
+    TAGKEYS(                      XK_6,             5)
 };
 
 /* button definitions */
