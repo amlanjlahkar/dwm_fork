@@ -10,11 +10,11 @@ static const char *fonts[]              = { "Liberation Sans:style=Regular:size=
                                             "Noto Color Emoji:style=Regular:size=9",
                                             "Font Awesome 5 Free Solid:style=Solid:size=8" };
 
-static const char col_statusbg[]        = "#121313";
-static const char col_statusfg[]        = "#a9bbb8";
-static const char col_tagbg[]           = "#202324";
-static const char col_aborder[]         = "#006d77";
-static const char col_iborder[]         = "#121313";
+static const char col_statusbg[]        = "#e9ecef";
+static const char col_statusfg[]        = "#495057";
+static const char col_tagbg[]           = "#ced4da";
+static const char col_aborder[]         = "#e9ecef";
+static const char col_iborder[]         = "#adb5bd";
 static const unsigned int baralpha      = 0xde;
 static const unsigned int borderalpha   = OPAQUE;
 
