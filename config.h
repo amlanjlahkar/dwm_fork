@@ -1,6 +1,6 @@
 /* appearance */
 static const unsigned int borderpx      = 1;        /* border pixel of windows */
-static const unsigned int gappx         = 0;        /* gaps between windows */
+static const unsigned int gappx         = 8;        /* gaps between windows */
 static const unsigned int snap          = 10;       /* snap pixel */
 static const int showbar                = 1;        /* 0 means no bar */
 static const int topbar                 = 1;        /* 0 means bottom bar */
@@ -13,10 +13,10 @@ static const char *fonts[]              = { "Liberation Sans:style=Regular:size=
 static const char col_statusbg[]        = "#e9ecef";
 static const char col_statusfg[]        = "#495057";
 static const char col_tagbg[]           = "#ced4da";
-static const char col_aborder[]         = "#e9ecef";
-static const char col_iborder[]         = "#adb5bd";
+static const char col_aborder[]         = "#52b788";
+static const char col_iborder[]         = "#343a40";
 static const unsigned int baralpha      = 0xde;
-static const unsigned int borderalpha   = OPAQUE;
+static const unsigned int borderalpha   = 0xde;
 
 static const char *colors[][3]      = {
     /*               fg            bg            border */
@@ -26,7 +26,7 @@ static const char *colors[][3]      = {
 static const unsigned int alphas[][3]      = {
     /*               fg      bg         border */
     [SchemeNorm] = { OPAQUE, baralpha,  borderalpha },
-    [SchemeSel]  = { OPAQUE, baralpha,  borderalpha },
+    [SchemeSel]  = { OPAQUE, baralpha,  OPAQUE },
 };
 
 /* tagging */
