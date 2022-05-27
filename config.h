@@ -1,28 +1,29 @@
 /* appearance */
-static const unsigned int borderpx      = 1;        /* border pixel of windows */
+static const unsigned int borderpx      = 2;        /* border pixel of windows */
 static const unsigned int gappx         = 8;        /* gaps between windows */
 static const unsigned int snap          = 10;       /* snap pixel */
 static const int showbar                = 1;        /* 0 means no bar */
 static const int topbar                 = 1;        /* 0 means bottom bar */
 static const int horizpadbar            = 10;       /* horizontal padding for statusbar */
 static const int vertpadbar             = 16;       /* vertical padding for statusbar */
-static const char *fonts[]              = { "Liberation Sans:style=Regular:size=8:antialias=true:autohint=true",
+static const char *fonts[]              = { "Inter:style=Medium:size=8:antialias=true:autohint=true",
                                             "Noto Color Emoji:style=Regular:size=9",
                                             "Font Awesome 5 Free Solid:style=Solid:size=8" };
 
-static const char col_statusbg[]        = "#e9ecef";
-static const char col_statusfg[]        = "#495057";
-static const char col_tagbg[]           = "#ced4da";
-static const char col_aborder[]         = "#52b788";
-static const char col_iborder[]         = "#343a40";
-static const unsigned int baralpha      = 0xde;
-static const unsigned int borderalpha   = 0xde;
+static const char col_statusbg[]        = "#14100d";
+static const char col_statusfg[]        = "#888f94";
+static const char col_tagbg[]           = "#403833";
+static const char col_tagfg[]           = "#b4bdc3";
+static const char col_aborder[]         = "#e6ebef";
+static const char col_iborder[]         = "#1c1917";
 
 static const char *colors[][3]      = {
     /*               fg            bg            border */
     [SchemeNorm] = { col_statusfg, col_statusbg, col_iborder },
-    [SchemeSel]  = { col_statusfg, col_tagbg,    col_aborder },
+    [SchemeSel]  = { col_tagfg,    col_tagbg,    col_aborder },
 };
+static const unsigned int baralpha      = OPAQUE;
+static const unsigned int borderalpha   = 0xde;
 static const unsigned int alphas[][3]      = {
     /*               fg      bg         border */
     [SchemeNorm] = { OPAQUE, baralpha,  borderalpha },
