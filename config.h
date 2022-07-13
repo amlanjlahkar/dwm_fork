@@ -1,6 +1,6 @@
 /* appearance */
 static const unsigned int borderpx      = 2;        /* border pixel of windows */
-static const unsigned int gappx         = 8;        /* gaps between windows */
+static const unsigned int gappx         = 10;        /* gaps between windows */
 static const unsigned int snap          = 10;       /* snap pixel */
 static const int showbar                = 1;        /* 0 means no bar */
 static const int topbar                 = 1;        /* 0 means bottom bar */
@@ -10,24 +10,25 @@ static const char *fonts[]              = { "Inter:style=Medium:size=8:antialias
                                             "Noto Color Emoji:style=Regular:size=9",
                                             "Font Awesome 5 Free Solid:style=Solid:size=8" };
 
-static const char col_statusbg[]        = "#14100d";
-static const char col_statusfg[]        = "#888f94";
-static const char col_tagbg[]           = "#403833";
-static const char col_tagfg[]           = "#b4bdc3";
-static const char col_aborder[]         = "#e6ebef";
-static const char col_iborder[]         = "#1c1917";
+static const char col_statusbg[]        = "#faf4ed";
+static const char col_statusfg[]        = "#797593";
+static const char col_tagbg[]           = "#dfdad9";
+static const char col_tagfg[]           = "#575279";
+static const char col_aborder[]         = "#3e8fb0";
+static const char col_iborder[]         = "#524f67";
+// static const unsigned int baralpha      = 0xd0;
+static const unsigned int baralpha      = OPAQUE;
+static const unsigned int borderalpha   = OPAQUE;
 
 static const char *colors[][3]      = {
     /*               fg            bg            border */
     [SchemeNorm] = { col_statusfg, col_statusbg, col_iborder },
     [SchemeSel]  = { col_tagfg,    col_tagbg,    col_aborder },
 };
-static const unsigned int baralpha      = OPAQUE;
-static const unsigned int borderalpha   = 0xde;
 static const unsigned int alphas[][3]      = {
     /*               fg      bg         border */
     [SchemeNorm] = { OPAQUE, baralpha,  borderalpha },
-    [SchemeSel]  = { OPAQUE, baralpha,  OPAQUE },
+    [SchemeSel]  = { OPAQUE, baralpha,  borderalpha },
 };
 
 /* tagging */
